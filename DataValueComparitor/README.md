@@ -8,56 +8,56 @@ Check the [README.md](README.md) file for more information.
 
 Just clone/download the files and any dependencies for your project then run the script using the bash command
 $ python36 DataValueComparitor.py
+If the message ***Initial Setup Still Required*** appears then you must still modify the code.
 
-In order to properly run the file, you must first update it to suit your needs.  Below is an example:
-
-################################################################################
-#
+In order to properly modify the code, you must first update it to suit your needs. Below is an example of a modified script:
+_________________________________________________________________________________
 # Example: Verifying Checksum Signitures
-#
-################################################################################
-#
-# 1. Most downloads come with a .txt file containing the MD/SHA Checksums.
-# Begin by viewing the .txt file to begin properly verifying your files.
-#
-# 2. Checksum your intended file, in this case the file is named:
-# UnverifiedInstallation.sh
-#
-# 3. Update Comparison.py's (a =) to state the warning message below.
-# 
-# 4. Update your i and !i to match your checksum values.
-#
-# 5. Save and exit nano using CTRL + x
-#
-################################################################################
-#
-# nano SHA256CHECKSUM.txt
-# d64923b036585b9043ee96b8127c3337498be69f1a196681e0d9dbbc34ee5c2d
-#
-# sha256sum UnverifiedInstallation.sh
-# 3c4289fa42b328f0d19557b2cf9dc5647fcf450f72196715f46ee5104826348a
-#
-# nano Comparison.py
-# a = """
-# ***WARNING UNVERIFIED SIGNITURE***
-# Your provided signitures provided do not match.  In order to
-# properly ensure your computer's safety, it is vital to only
-# download and install software from a reliable source.
-# """
-# i="3c4289fa42b328f0d19557b2cf9dc5647fcf450f72196715f46ee5104826348a"
-# if(i!="d64923b036585b9043ee96b8127c3337498be69f1a196681e0d9dbbc34ee5c2d"):
-#      print(a)
-# else:
-#      print("Acceptable Signiture")
-#
-# python36 Comparison.py
-#
-# ***WARNING UNVERIFIED SIGNITURE***
-# Your provided signitures provided do not match.  In order to
-# properly ensure your computer's safety, it is vital to only
-# download and install software from a reliable source.
-#
-################################################################################
+_________________________________________________________________________________
+ 1. Most downloads come with a .txt file containing the MD/SHA Checksums.
+ Begin by viewing the .txt file to begin properly verifying your files.
+
+ 2. Checksum your intended file, in this case the file is named:
+ UnverifiedInstallation.sh
+
+ 3. Update DataValueComparitor.py's (a =) to state the warning message below.
+ 
+ 4. Update your i and !i to match your checksum values.
+
+ 5. Save and exit nano using CTRL + x
+ 
+ 6. Run the script:
+ $ python36 DataValueComparitor.py
+ If the message ***WARNING...*** appears then you have successfully modified the script.
+ _________________________________________________________________________________
+ Perform these commands in your shell prompt to run the script.
+ 
+ $ nano SHA256CHECKSUM.txt
+ d64923b036585b9043ee96b8127c3337498be69f1a196681e0d9dbbc34ee5c2d
+
+ $ sha256sum UnverifiedInstallation.sh
+ 3c4289fa42b328f0d19557b2cf9dc5647fcf450f72196715f46ee5104826348a
+
+ $ nano DataValueComparitor.py
+ a = """
+ ***WARNING UNVERIFIED SIGNITURE***
+ Your provided signitures provided do not match.  In order to
+ properly ensure your computer's safety, it is vital to only
+ download and install software from a reliable source.
+ """
+ i="3c4289fa42b328f0d19557b2cf9dc5647fcf450f72196715f46ee5104826348a"
+ if(i!="d64923b036585b9043ee96b8127c3337498be69f1a196681e0d9dbbc34ee5c2d"):
+      print(a)
+ else:
+      print("Acceptable Signiture")
+
+ $ python36 Comparison.py
+
+ ***WARNING UNVERIFIED SIGNITURE***
+ Your provided signitures provided do not match.  In order to
+ properly ensure your computer's safety, it is vital to only
+ download and install software from a reliable source.
+_________________________________________________________________________________
 
 ### Prerequisites
 

@@ -6,16 +6,18 @@ Check the [README.md](README.md) file for more information.
 
 ## Getting Started
 
-Just clone/download the files and any dependencies for your project then run the script using the bash command
+Just clone/download the files and any dependencies for your project then run the script using the bash command:
+
 $ python36 dvcCore.py
 
 In order to properly modify the code, you must first update it to suit your needs. Below is an example of a modified script:
 
 ### Example: Verifying Checksum Signatures
 
- 1. Download "TestFile.txt" and "TestFile.sh", both of which can be found on
+ 1. Download all the TestFiles and PGPkeys, both of which can be found on
  my github repository: 
  https://github.com/BeatleJuicePack/Python-Scripts/tree/master/DataValueComparitor/DataValueComparitorCore 
+ 
  2. Install Python 3.6 and run the following command:
  $ python36 dvcCore.py
 

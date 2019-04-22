@@ -1,6 +1,6 @@
 # Data Value Comparitor
 
-***dvcv2.py is Currently up and is designed to replace DataValueComparitor.py***
+***dvcCore.py is Currently up and is designed to replace DataValueComparitor_lite.py***
 
 This repository contains a script to compare one set of values from another.  
 This project is intended to be an easy way to practice coding while requiring little to no knowledge of programming.

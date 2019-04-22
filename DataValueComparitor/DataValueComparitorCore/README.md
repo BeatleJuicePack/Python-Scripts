@@ -10,83 +10,76 @@ Just clone/download the files and any dependencies for your project then run the
 $ python36 dvcCore.py
 
 In order to properly modify the code, you must first update it to suit your needs. Below is an example of a modified script:
-_________________________________________________________________________________
-################################################################################
-#
-# Example: Verifying Checksum Signatures
-#
-################################################################################
-#
-# 1. Download "TestFile.txt" and "TestFile.sh", both of which can be found on
-# my github repository: 
-# https://github.com/BeatleJuicePack/Python-Scripts/tree/master/DataValueComparitor/DataValueComparitorCore 
-# 2. Install Python 3.6 and run the following command:
-# $ python36 dvcCore.py
-#
-# 3. Update the script by adjusting your filename/path in the strings:
-# sig & ver & vergpgs & vergpga & vergpgf
-# 
-# 4. Save and repeat as needed.
-#
-################################################################################
-#
-# python36 dvcCore.py
-#
-#--------------------------------------------------------------------------------DataValueComparitorv2 - April 2019
+
+### Example: Verifying Checksum Signatures
+
+ 1. Download "TestFile.txt" and "TestFile.sh", both of which can be found on
+ my github repository: 
+ https://github.com/BeatleJuicePack/Python-Scripts/tree/master/DataValueComparitor/DataValueComparitorCore 
+ 2. Install Python 3.6 and run the following command:
+ $ python36 dvcCore.py
+
+ 3. Update the script by adjusting your filename/path in the strings:
+ sig & ver & vergpgs & vergpga & vergpgf
+ 
+ 4. Save and repeat as needed.
+
+ python36 dvcCore.py
+
+DataValueComparitorv2 - April 2019
 #BeatleJuice - BeatleJuicePack
 #https://beatlejuicepack.com/
 #https://github.com/BeatleJuicePack
-#--------------------------------------------------------------------------------#Files: 
-#~/Downloads/TestFile.txt
-#~/Downloads/TestFile.sh
-#~/Downloads/TestFilePGPPublicKey.py.sig
-#~/Downloads/TestFilePGPPublicKey.py.asc
-#~/Downloads/TestFilePGPPublicKey.py
-#--------------------------------------------------------------------------------
-#MD5sum: ~/Downloads/TestFile.sh
-#ff1caab2eefe13cd4cd82da3400bdd35
-#
-#SHA1Sum: ~/Downloads/TestFile.sh
-#d99c49861579d424442e63c5f885181bf49c3f57
-#
-#SHA224sum: ~/Downloads/TestFile.sh
-#89125fa4362562663b5231a2f7d9c3dd78ab3f9a4c4ea4266d74e703
-#
-#SHA256sum: ~/Downloads/TestFile.sh
-#cf1868bcaa2e490b186fb3984e64d2aeea24f4c5b361c480bdff07f4a53cc885
-#
-#SHA384sum: ~/Downloads/TestFile.sh
-#abfc6695cd67baba21a6418530e6bfdfc6072e86c90f9f529f28d2b7d708d8d8d7fa8302ed46511b#12ec194c9b6f2bcd
-#
-#SHA512sum: ~/Downloads/TestFile.sh
-#824748200fe007c6a079f4fbacc1cc376cad4da93072956482fd017c6db26d13cb12e48e2eb374f4#c6be6b653bd95c5340faf88f5c52a18df1ec31e6daf947b4
-#--------------------------------------------------------------------------------
-#~/Downloads/TestFilePGPPublicKey.py.asc
-#gpg: Signature made Mon 22 Apr 2019 11:59:31 AM PDT using RSA key ID 0B55EEFF
-#gpg: Good signature from "BeatleJuice <porkinghog9@yahoo.com>"
-#
-#~/Downloads/TestFilePGPPublicKey.py.sig
-#gpg: Signature made Mon 22 Apr 2019 11:55:15 AM PDT using RSA key ID 0B55EEFF
-#gpg: Good signature from "BeatleJuice <porkinghog9@yahoo.com>"
-#--------------------------------------------------------------------------------
-#Verified Values for: ~/Downloads/TestFile.txt
-#MD5:ff1caab2eefe13cd4cd82da3400bdd35
-#SHA1:
-#SHA224:
-#SHA256:cf1868bcaa2e490b186fb3984e64d2aeea24f4c5b361c480bdff07f4a53cc885
-#SHA384:
-#SHA512:
-#--------------------------------------------------------------------------------
-#MD5 Verified: YES
-#SHA1 Verified: No
-#SHA224 Verified: No
-#SHA256 Verified: YES
-#SHA384 Verified: No
-#SHA512 Verified: No
-#--------------------------------------------------------------------------------
-#Task Complete!
-################################################################################
-_________________________________________________________________________________
+
+Files: 
+~/Downloads/TestFile.txt
+~/Downloads/TestFile.sh
+~/Downloads/TestFilePGPPublicKey.py.sig
+~/Downloads/TestFilePGPPublicKey.py.asc
+~/Downloads/TestFilePGPPublicKey.py
+
+MD5sum: ~/Downloads/TestFile.sh
+ff1caab2eefe13cd4cd82da3400bdd35
+
+SHA1Sum: ~/Downloads/TestFile.sh
+d99c49861579d424442e63c5f885181bf49c3f57
+
+SHA224sum: ~/Downloads/TestFile.sh
+89125fa4362562663b5231a2f7d9c3dd78ab3f9a4c4ea4266d74e703
+
+SHA256sum: ~/Downloads/TestFile.sh
+cf1868bcaa2e490b186fb3984e64d2aeea24f4c5b361c480bdff07f4a53cc885
+
+SHA384sum: ~/Downloads/TestFile.sh
+abfc6695cd67baba21a6418530e6bfdfc6072e86c90f9f529f28d2b7d708d8d8d7fa8302ed46511b#12ec194c9b6f2bcd
+
+SHA512sum: ~/Downloads/TestFile.sh
+824748200fe007c6a079f4fbacc1cc376cad4da93072956482fd017c6db26d13cb12e48e2eb374f4#c6be6b653bd95c5340faf88f5c52a18df1ec31e6daf47b4
+
+~/Downloads/TestFilePGPPublicKey.py.asc
+gpg: Signature made Mon 22 Apr 2019 11:59:31 AM PDT using RSA key ID 0B55EEFF
+gpg: Good signature from "BeatleJuice <porkinghog9@yahoo.com>"
+
+~/Downloads/TestFilePGPPublicKey.py.sig
+gpg: Signature made Mon 22 Apr 2019 11:55:15 AM PDT using RSA key ID 0B55EEFF
+gpg: Good signature from "BeatleJuice <porkinghog9@yahoo.com>"
+
+Verified Values for: ~/Downloads/TestFile.txt
+MD5:ff1caab2eefe13cd4cd82da3400bdd35
+SHA1:
+SHA224:
+SHA256:cf1868bcaa2e490b186fb3984e64d2aeea24f4c5b361c480bdff07f4a53cc885
+SHA384:
+SHA512:
+
+MD5 Verified: YES
+SHA1 Verified: No
+SHA224 Verified: No
+SHA256 Verified: YES
+SHA384 Verified: No
+SHA512 Verified: No
+
+Task Complete!
 
 ### Prerequisites
 

@@ -1,0 +1,7 @@
+***This file contains no scrips and exists for testing purposes only***
+SHA256 Checksum value for TestFile.sh:
+cf1868bcaa2e490b186fb3984e64d2aeea24f4c5b361c480bdff07f4a53cc885
+MD5sum: ~/Downloads/TestFile.sh
+ff1caab2eefe13cd4cd82da3400bdd35
+FALSE69sum: ~/foobar/bar.xyzabc
+824748200fe007c6a079f4fbacc1cc376cad4da9307295

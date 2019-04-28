@@ -8,9 +8,20 @@ Check the [README.md](README.md) file for more information.
 
 Just clone/download the files and any dependencies for your project then run the script using the bash command:
 
-$ python36 dvcCore.py
+$ chmod +x ~/Downloads/dvc/install_dvcCore.sh
+$ source ~/Downloads/dvc/install_dvcCore.sh
 
-In order to properly modify the code, you must first update it to suit your needs. Below is an example of a modified script:
+To run the core program you can begin by typing:
+
+$ dvc
+
+*optionally you can collect checksum values for a specific file using and output them as "{file}_checksum.txt":
+
+$ dvcsum
+
+*optionally you can collect a log of the program and output it as "{file]_dvclog.txt" by using the command:
+
+$ dvclog
 
 ### Example: Verifying Checksum Signatures
 
@@ -111,6 +122,10 @@ and restart your IDE.
 ## Issues
 
 1. Unknown issues.
+2. Importing GPG .sig keys during runtime; currently the script only allows for .asc files not .sig files to be imported.  GPG .sig keys can still be verified if imported prior to runtime.
+3. Import GPG keys from a Keyserver using a case function to pull up a tkinter/tui prompt; similar to the above problem, the script currently only allows for local .asc files to be imported in.
+4. Virus Scanning; allowing for files to be scanned alongside the script could prove invaluable for virus prevention.
+5. File paths; currently I do not know exactly where and how the downloads operate using this specific github repository. Help is required from members like you (the community) to ensure the reliability and stability of the script.
 
 ## Contributing
 

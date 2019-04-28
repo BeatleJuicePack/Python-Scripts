@@ -22,9 +22,8 @@
 #
 ################################################################################
 #
-# 1. Download "TestFile.txt" and "TestFile.sh", both of which can be found on
-# my github repository: 
-# https://github.com/BeatleJuicePack/Python-Scripts/tree/master/DataValueComparitor/DataValueComparitorCore 
+# 1. Download all the TestFiles and PGPkeys, all of which can be found on my github repository: 
+# https://github.com/BeatleJuicePack/Python-Scripts/tree/master/DataValueComparitor/DataValueComparitorCore
 # 2. Install Python 3.6 and run the following command:
 # $ python36 dvcCore.py
 #
@@ -95,16 +94,29 @@
 # Import your dependencies
 import os
 import subprocess
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 
 # *Optional* Clears the terminal screen
 os.system("reset")
 
-# Define the path to your files
-sig = fileSignature = "~/Downloads/TestFile.txt"
-ver = fileToBeVerified = "~/Downloads/TestFile.sh"
-vergpgs = "~/Downloads/TestFilePGPPublicKey.py.sig"
-vergpga = "~/Downloads/TestFilePGPPublicKey.py.asc"
-vergpgf = "~/Downloads/TestFilePGPPublicKey.py"
+# Define the path to your files using a GUI
+# *Optional* Specifies the files types by adding the below comment to the sig string
+#,filetypes = [("Text Files: ", "*.txt"), ("Signature Files:", "*.sig")])
+sig = askopenfilename(initialdir = "~/Downloads/", title = "Select SHA/MD Hash file: (example : dvcCore_checksums.txt)")
+ver = askopenfilename(initialdir = "~/Downloads/", title = "Select a file to be verified: (example: dvcCore.py)")
+vergpgs = askopenfilename(initialdir = "~/Downloads/", title = "Select GPG signature: (example: dvcCore.py.sig)")
+vergpga = askopenfilename(initialdir = "~/Downloads/", title = "Select GPG ASCI signature: (example: dvcCore.py.asc)")
+vergpgf = ver
+# *Optional* Specify the file to be GPG and SHA/MD verified
+#vergpgf = askopenfilename(initialdir = "~/Downloads/", title = "Select file to be GPG verified: (fileName.ext)")
+
+# *Optional* Specify your files directly by adjusting the code below
+#sig = fileSignature = "~/Downloads/TestFile.txt"
+#ver = fileToBeVerified = "~/Downloads/TestFile.sh"
+#vergpgs = "~/Downloads/TestFilePGPPublicKey.py.sig"
+#vergpga = "~/Downloads/TestFilePGPPublicKey.py.asc"
+#vergpgf = "~/Downloads/TestFilePGPPublicKey.py"
 
 # Strings for Checksum
 verf = (" " + ver)
@@ -152,8 +164,13 @@ print(b + "DataValueComparitorv2 - April 2019" + "\r")
 print("BeatleJuice - BeatleJuicePack")
 print("https://beatlejuicepack.com/")
 print("https://github.com/BeatleJuicePack")
-print(b + "Files: " + "\n" + sig + "\n" + ver + "\n" + vergpgs + "\n" + vergpga + "\n" + vergpgf + "\n" + b)
-print(md5print + s1print + s224print + s256print + s384print + s512print + b)
+print(b + "Files: " + "\n" + sig + "\n" + ver + "\n" + vergpgs + "\n" + vergpga  + "\n" + b)
+sumpr = (md5print + s1print + s224print + s256print + s384print + s512print)
+print(sumpr + b)
+
+# Creates a copy of the checksum hashes for your file
+#with open(f"{ver}_checksum.txt", "w") as text_file:
+#    print(f"{sumpr}", file=text_file)
 
 # Performs gpg import and verification for specified files
 gpgkeyva = subprocess.getoutput(gpgver + vergpgaa)

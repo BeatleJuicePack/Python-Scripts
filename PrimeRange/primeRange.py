@@ -22,10 +22,11 @@
 
 import time
 
+n = int(input("Find the prime numbers to what value? "))
+
 start = time.time()
 print("Initializing timer... ")
 
-n = int(input("Find the prime numbers to what value? "))
 p = 2
 for p in range(2, n+1):
     for i in range(2,p):

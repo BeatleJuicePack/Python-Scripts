@@ -20,6 +20,11 @@
 ##   along with this program.  If not, see <https://www.gnu.org/licenses/>.   ##
 ################################################################################
 
+import time
+
+start = time.time()
+print("Initializing timer... ")
+
 n = int(input("Find the prime numbers to what value? "))
 p = 2
 for p in range(2, n+1):
@@ -28,4 +33,8 @@ for p in range(2, n+1):
             break
     else:
         print(p),
-print("Done")
+
+end = time.time()
+print(end - start)
+print("   seconds")
+print("Done!")

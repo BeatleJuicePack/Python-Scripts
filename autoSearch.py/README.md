@@ -8,6 +8,9 @@ Check the README.md files within each directory for more information.
 
 Just clone/download the files and any dependencies for your project then run the script using the "python autoSearch.py".
 
+*pipe searches using:
+$ printf "search_term" | python autoSearch.py
+
 ### Prerequisites
 
 In order to run any Python based scripts you must first have installed Python as well as any dependencies for your project.

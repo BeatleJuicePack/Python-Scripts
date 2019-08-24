@@ -24,9 +24,15 @@ try:
     from googlesearch import search 
 except ImportError:  
     print("No module named 'google' found") 
+    
+from random import *
+
+x = randint(1,3)*10
+y = randint(1,3)*10
+z = randint(2,20)
   
 # to search 
 query = input("Enter Your Search: ")
   
-for j in search(query, tld="co.in", num=10, stop=1, pause=2): 
+for j in search(query, tld="com", num=x, stop=y, pause=z): 
     print(j) 

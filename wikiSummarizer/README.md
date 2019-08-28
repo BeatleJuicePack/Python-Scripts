@@ -1,15 +1,12 @@
  # AutoSearch
 
-This repository contains a script to automate searches into the Google's Search Engine.
+This repository contains a script to summarize wikipedia pages.
 These projects are intended to be an easy way to practice coding while requiring little to no knowledge of programming.
 Check the README.md files within each directory for more information.
 
 ## Getting Started
 
-Just clone/download the files and any dependencies for your project then run the script using the "python autoSearch.py".
-
-*pipe searches using:
-$ printf "search_term" | python autoSearch.py
+Just clone/download the files and any dependencies for your project then run the script using the "python wikiSummarizer.py".
 
 ### Prerequisites
 

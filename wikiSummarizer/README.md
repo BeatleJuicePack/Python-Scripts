@@ -1,4 +1,4 @@
- # AutoSearch
+ # wikiSummarizer
 
 This repository contains a script to summarize wikipedia pages.
 These projects are intended to be an easy way to practice coding while requiring little to no knowledge of programming.
@@ -7,6 +7,11 @@ Check the README.md files within each directory for more information.
 ## Getting Started
 
 Just clone/download the files and any dependencies for your project then run the script using the "python wikiSummarizer.py".
+
+1. Save search terms in wikiSearch.txt
+2. Adjust path to wikiSearch.txt
+3. $ python wikiSummarizer.py >> wikiSummary.txt
+4. Search terms and Summary
 
 ### Prerequisites
 

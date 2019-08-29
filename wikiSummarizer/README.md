@@ -13,6 +13,8 @@ Just clone/download the files and any dependencies for your project then run the
 3. $ python wikiSummarizer.py >> wikiSummary.txt
 4. Search terms and Summary
 
+**Note: There is an issue causing the program to fail during urllib.error, to prevent this use less than 100 searches per file.
+
 ### Prerequisites
 
 In order to run any Python based scripts you must first have installed Python as well as any dependencies for your project.

@@ -85,10 +85,10 @@ with open(wikiSearch) as ws:
         summary_sentences = heapq.nlargest(7, sentence_scores, key=sentence_scores.get)
 
         summary = ' '.join(summary_sentences)
-        print(summary)
+        print(line.strip(),":", summary)
 
 # Delay will prevent abuse
-        delay = round(random.uniform(10, 15), 2)
+        delay = round(random.uniform(15, 25), 2)
         time.sleep(delay)
         
         line = ws.readline()

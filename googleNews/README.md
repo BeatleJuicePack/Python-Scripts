@@ -8,8 +8,10 @@ Check the README.md files within each directory for more information.
 
 Just clone/download the files and any dependencies for your project then run the script using the "python googleNews.py".
 
+- pip install bs4 nltk lxml
+
 1. $ python googleNews.py >> googleNews.txt
-2. Summary
+2. Summary can be read on screen or saved to googleNews.txt
 
 ### Prerequisites
 

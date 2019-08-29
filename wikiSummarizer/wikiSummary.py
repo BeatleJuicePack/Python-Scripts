@@ -61,7 +61,7 @@ with open(wikiSearch) as ws:
 
 # Finds the weighted frequency and divides by the number of occurances
 
-        maximum_frequncy = max(word_frequencies.values())
+        maximum_frequncy = max(word_frequencies.values(), default=0)
 
         for word in word_frequencies.keys():
             word_frequencies[word] = (word_frequencies[word]/maximum_frequncy)

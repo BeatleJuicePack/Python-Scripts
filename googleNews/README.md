@@ -4,6 +4,10 @@ This repository contains a script to summarize news articles found on Google's T
 These projects are intended to be an easy way to practice coding while requiring little to no knowledge of programming.
 Check the README.md files within each directory for more information.
 
+** Lite displays headers and links to the articles
+** Heavy displays all news articles that have been tagged by popularity based on all major categories displayed by Google News
+** Regular displays a summary of roughly the top 10 news articles at the time
+
 ## Getting Started
 
 Just clone/download the files and any dependencies for your project then run the script using the "python googleNews.py".

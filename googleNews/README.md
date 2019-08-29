@@ -5,7 +5,7 @@ These projects are intended to be an easy way to practice coding while requiring
 Check the README.md files within each directory for more information.
 
 ** Lite displays headers and links to the articles
-** Heavy displays all news articles that have been tagged by popularity based on all major categories displayed by Google News
+** Heavy displays all news articles that have been tagged by popularity based on all major categories displayed by Google News then saves them into a file called "googleNews.txt".
 ** Regular displays a summary of roughly the top 10 news articles at the time
 
 ## Getting Started
